@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic);
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 html {
     margin-top: 0;
     font-family: "Candara", sans-serif;
@@ -118,10 +124,10 @@ html {
 }
 .title {
     display: flex;
-    }
+    margin: auto;
+}
 .title_left {
     flex: 1;
-    display: inline-block;
     width: 300px;
     height: 7em;
     margin: auto; /*центрируем текст "Смарт-контракты" по вертикали*/
@@ -137,14 +143,16 @@ html {
 
 .article1 {
     display: flex;
+    margin: auto;
     background-color: rgba(100, 149, 237, 0.3);
     border-radius: 20px;
 }
 
 .article1_left {
     flex: 1;
-    text-align: center;
+    margin: auto;
     padding-top: 8px;
+    text-align: center;
 }
 
 .round {
@@ -172,7 +180,9 @@ html {
 
 .article2_right {
     flex: 1;
+    margin: auto;
     padding-top: 8px;
+    text-align: center;
 }
 
 .article3 {
@@ -194,7 +204,102 @@ html {
     padding: 20px;
 }
 
+/*_____________________________________________faq*/
 
+.box_outer {
+    display: flex;
+    flex-grow: 1;
+}
+
+.box_inner {
+    flex: 1;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 1160px;
+    text-align: center;
+    font-size: 28px;
+}
+/*-------------------------------------код отвечающий за раскрывающиеся вопросы*/
+.demo {
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 5% auto;
+    text-align: left;
+}
+.answer {
+    font-size: 24px;
+}
+
+/* скрываем чекбоксы и блоки с содержанием */
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+/* вид текста label */
+.hide + label {
+    margin: 0;
+    padding: 0;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: #00329d;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block;
+    background: white;
+    -moz-box-shadow: inset 3px 3px 10px #0080ff;
+    -webkit-box-shadow: inset 3px 3px 10px #0080ff;
+    box-shadow: inset 3px 3px 10px #0080ff;
+    margin-left: 20px;
+    padding: 10px;
+    /* чуточку анимации при появлении */
+    -webkit-animation:fade ease-in 0.5s;
+    -moz-animation:fade ease-in 0.5s;
+    animation:fade ease-in 0.5s;
+}
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+}
+/* теперь кружочки с плюсиками, которые меняются на минусы*/
+.hide + label:before {
+    background-color: #1e90ff;
+    color: white;
+    content: "\002B";
+    display: block;
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 16px;
+    margin: 8px;
+    text-align: center;
+    width: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide:checked + label:before {
+    content: "\2212";
+}
+/*____________________________________footer на всех страницах*/
 .footer {
     display: flex;
     background: #83c2ff;
