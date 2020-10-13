@@ -53,7 +53,7 @@ html {
 #nav a:focus {
     color: #0080ff;
 }
-
+/*_____________________________________________index*/
 .block1 {
     display: flex;
     font-size: 26px;
@@ -111,6 +111,89 @@ html {
     border-radius: 20px;
     text-align: center;
 }
+/*_____________________________________________development*/
+.content {
+    font-size: 26px;
+    text-align: left;
+}
+.title {
+    display: flex;
+    }
+.title_left {
+    flex: 1;
+    display: inline-block;
+    width: 300px;
+    height: 7em;
+    margin: auto; /*центрируем текст "Смарт-контракты" по вертикали*/
+    padding: 30px;
+    text-align: center;
+}
+
+.title_right {
+    flex: 1;
+    padding: 30px;
+    margin: auto;
+}
+
+.article1 {
+    display: flex;
+    background-color: rgba(100, 149, 237, 0.3);
+    border-radius: 20px;
+}
+
+.article1_left {
+    flex: 1;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.round {
+    border-radius: 100px; /*закругление углов картинок*/
+    border: 3px solid #d3d7dd;
+}
+
+.article1_right {
+    flex: 2;
+    margin: auto;
+    padding: 20px;
+}
+
+.article2 {
+    display: flex;
+    margin: auto;
+
+}
+
+.article2_left {
+    flex: 2;
+    margin: auto;
+    padding: 20px;
+}
+
+.article2_right {
+    flex: 1;
+    padding-top: 8px;
+}
+
+.article3 {
+    display: flex;
+    background-color: rgba(100, 149, 237, 0.3);
+    border-radius: 20px;
+}
+
+.article3_left {
+    flex: 1;
+    margin: auto;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.article3_right {
+    flex: 2;
+    margin: auto;
+    padding: 20px;
+}
+
 
 .footer {
     display: flex;
