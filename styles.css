@@ -27,7 +27,7 @@ html {
     padding: 1%;
 }
 .logo a img:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 
 }
 .menu {
@@ -155,7 +155,7 @@ html {
 /*анимация при наведении - увеличением*/
 .links_footer a img:hover {
     transform: scale(1.15);
-    transition: transform 0.3s ease-in, /*замедление анимации*/
-                box-shadow 0.3s linear;
+    transition: transform 0.2s ease-in, /*замедление анимации*/
+                box-shadow 0.2s linear;
 }
 
