@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic);
 
 *, ::after, ::before {
     box-sizing: border-box;
@@ -12,7 +10,6 @@ html {
     display: flex;
     flex-direction: column;
     background: white;
-
     padding-top: 120px;
 }
 
@@ -59,68 +56,81 @@ html {
 #nav a:focus {
     color: #0080ff;
 }
-/*_____________________________________________index*/
+/*_____________________________________________________________________________________________index*/
 .block1 {
     display: flex;
     font-size: 26px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
 }
-/*поднимаем объект при наведении курсора*/
-
-/*.block1 div:hover{*/
-/*    transform: scale(1.03);*/
-/*    -webkit-box-shadow: 10px 10px 5px 4px rgba(0,0,0,0.75);*/
-/*    -moz-box-shadow: 10px 10px 5px 4px rgba(0,0,0,0.75);*/
-/*    box-shadow: 10px 10px 5px 4px rgba(0,0,0,0.75);*/
-/*}*/
+.block1 p {
+    margin: 0;
+}
 
 .article1_1 {
-    flex: 1;
-    background-image: url("images/article3.jpg");
-    height: 445px;
-    margin: 20px 20px 20px 0;
-    padding: 20px;
+    display: flex;
     border-radius: 20px;
     text-align: center;
 }
 
-.article1_2 {
+.article1_1_left {
     flex: 1;
-    background-image: url("images/article2.jpg");
-    height: 445px;
-    margin: 20px 0 20px 20px;
-    padding: 20px;
-    border-radius: 20px;
+    margin: auto;
     text-align: center;
+}
+
+.article1_1_right {
+    flex: 1;
+}
+
+
+.article1_2 {
+    border-radius: 20px;
+    text-align: left;
 }
 
 .block2 {
     display: flex;
     font-size: 26px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.block2 p {
+    margin: 0;
 }
 
 .article2_1 {
-    flex: 1;
-    background-image: url("images/article.jpg");
-    height: 445px;
-    margin: 20px 20px 20px 0;
-    padding: 20px;
+    display: flex;
     border-radius: 20px;
     text-align: center;
 }
 
-.article2_2 {
+.article2_1_left {
     flex: 1;
-    background-image: url("images/article4.jpg");
-    height: 445px;
-    margin: 20px 0 20px 20px;
-    padding: 20px;
-    border-radius: 20px;
+    margin: auto;
     text-align: center;
 }
-/*_____________________________________________development*/
+
+.article2_1_right {
+    flex: 1;
+}
+
+
+.article2_2 {
+    border-radius: 20px;
+    text-align: left;
+}
+
+
+/*_________________________________________________________________________________________development*/
 .content {
     font-size: 26px;
     text-align: left;
+    background-image: url("images/background_dev.jpg");
 }
 .title {
     display: flex;
@@ -157,7 +167,7 @@ html {
 
 .round {
     border-radius: 100px; /*закругление углов картинок*/
-    border: 3px solid #d3d7dd;
+    border: 3px solid #8bb9ff;
 }
 
 .article1_right {
@@ -174,7 +184,7 @@ html {
 
 .article2_left {
     flex: 2;
-    margin: auto;
+    margin: auto 20px auto 80px;
     padding: 20px;
 }
 
@@ -204,11 +214,12 @@ html {
     padding: 20px;
 }
 
-/*_____________________________________________faq*/
+/*________________________________________________________________________________________________faq*/
 
 .box_outer {
     display: flex;
     flex-grow: 1;
+    background-image: url("images/background_faq.jpg");
 }
 
 .box_inner {
@@ -222,11 +233,11 @@ html {
     text-align: center;
     font-size: 28px;
 }
-/*-------------------------------------код отвечающий за раскрывающиеся вопросы*/
+/*------------------------------код отвечающий за раскрывающиеся вопросы*/
 .demo {
     max-width: 1024px;
-    padding: 0 20px;
-    margin: 5% auto;
+    padding: 20px 20px;
+    margin: 1% auto;
     text-align: left;
 }
 .answer {
@@ -238,6 +249,14 @@ html {
 .hide + label ~ div {
     display: none;
 }
+
+label {
+    -webkit-box-shadow: 10px 10px 20px 2px rgba(0,0,0,0.37); /*тень у блоков с вопросами*/
+    -moz-box-shadow: 10px 10px 20px 2px rgba(0,0,0,0.37);
+    box-shadow: 10px 10px 20px 2px rgba(0,0,0,0.37);
+    width: 100%;
+    background-color: white;
+}
 /* вид текста label */
 .hide + label {
     margin: 0;
@@ -246,10 +265,17 @@ html {
     cursor: pointer;
     display: inline-block;
 }
+.hide + label:hover {
+    background-color: rgba(131, 194, 255, 0.56);
+}
+
 /* вид текста label при активном переключателе */
 .hide:checked + label {
-    color: #00329d;
+    background-color: rgba(131, 194, 255, 0.56);
     border-bottom: 0;
+    -webkit-box-shadow: 14px -1px 20px -7px rgba(0,0,0,0.37);
+    -moz-box-shadow: 14px -1px 20px -7px rgba(0,0,0,0.37);
+    box-shadow: 14px -1px 20px -7px rgba(0,0,0,0.37);
 }
 /* когда чекбокс активен показываем блоки с содержанием  */
 .hide:checked + label + div {
@@ -299,11 +325,28 @@ html {
 .hide:checked + label:before {
     content: "\2212";
 }
-/*____________________________________footer на всех страницах*/
+/*_____________________________________________________________________________________footer на всех страницах*/
 .footer {
     display: flex;
     background: #83c2ff;
     border-radius: 20px;
+    margin-top: 40px;
+    /*градиент*/
+    /*background: rgba(168,223,250,1);*/
+    /*background: -moz-linear-gradient(top, rgba(168,223,250,1) 0%, rgba(157,190,207,1) 46%, rgba(10,119,173,1) 100%);*/
+    /*background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(168,223,250,1)), color-stop(46%, rgba(157,190,207,1)), color-stop(100%, rgba(10,119,173,1)));*/
+    /*background: -webkit-linear-gradient(top, rgba(168,223,250,1) 0%, rgba(157,190,207,1) 46%, rgba(10,119,173,1) 100%);*/
+    /*background: -o-linear-gradient(top, rgba(168,223,250,1) 0%, rgba(157,190,207,1) 46%, rgba(10,119,173,1) 100%);*/
+    /*background: -ms-linear-gradient(top, rgba(168,223,250,1) 0%, rgba(157,190,207,1) 46%, rgba(10,119,173,1) 100%);*/
+    /*background: linear-gradient(to bottom, rgba(168,223,250,1) 0%, rgba(157,190,207,1) 46%, rgba(10,119,173,1) 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8dffa', endColorstr='#0a77ad', GradientType=0 );*/
+}
+.footer h3 {
+    margin: 0;
+}
+
+.footer p {
+    margin-top: 0;
 }
 
 .contacts {
@@ -311,7 +354,7 @@ html {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 20px;
+    padding: 10px 20px 0 40px;
 }
 .contacts_top {
     flex-grow: 1;
@@ -326,13 +369,13 @@ html {
     display: flex;
     flex-direction: column;
     text-align: right;
-    padding: 20px;
+    padding: 0 40px 20px 20px;
 }
 .links_top {
     flex: 1;
-    text-align: right;
-    padding-left: 30px;
+    padding: 20px 30px 0 0;
     font-size: 1.2em;
+    text-align: right;
 }
 .links_footer {
     flex: 1;
