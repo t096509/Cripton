@@ -57,6 +57,10 @@ html {
     color: #0080ff;
 }
 /*_____________________________________________________________________________________________index*/
+
+.box {
+    background-image: url("images/background_index.jpg");
+}
 .block1 {
     display: flex;
     font-size: 26px;
@@ -324,6 +328,22 @@ label {
 }
 .hide:checked + label:before {
     content: "\2212";
+}
+
+/*___________________________________________________________________________________contacts*/
+
+.form {
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.bord {
+    width: 640px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    top: -80px;
 }
 /*_____________________________________________________________________________________footer на всех страницах*/
 .footer {
