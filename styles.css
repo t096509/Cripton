@@ -332,6 +332,11 @@ label {
 
 /*___________________________________________________________________________________contacts*/
 
+.box_contacts {
+    display: flex;
+    background-image: url("images/background_contacts.jpg");
+}
+
 .form {
     margin: auto;
     overflow: hidden;
