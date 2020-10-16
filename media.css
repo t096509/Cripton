@@ -35,7 +35,7 @@
     }
 
     .header {
-        flex-wrap: wrap;  /* для переноса */
+        flex-wrap: wrap;  /* для переноса элементов в столбик*/
         position: unset; /*расфиксируем header*/
         padding: 0 10px;
     }
@@ -70,8 +70,39 @@
         width: 540px
     }
 
+    .box_contacts {
+        margin: auto;
+    }
+
     .form {
         margin: auto;
+        width: 500px;
+    }
+
+    .bord {
+        width: 500px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .links_footer a img {
+        width: 15%;
+    }
+
+    .links_top {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .links {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .contacts {
+        padding: 10px;
     }
     /*.sideitem{ flex-direction:row; flex-basis:100%; }*/
 
