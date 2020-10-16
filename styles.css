@@ -20,7 +20,6 @@ html {
     top: 0;
     right: 8px;
     left: 8px;
-    height: 120px;
     border-radius: 20px;
     font-weight: bold;
 }
@@ -35,23 +34,23 @@ html {
 }
 .menu {
     flex-grow: 1;
+    margin: auto;
 }
 #nav {
     margin: 0;
-    padding: 40px;
     font-size: 28px;
     text-align: center;
+
 }
 #nav li {
     display: inline-block;
+    margin: 20px;
 }
 #nav li a {
     color: white;
     text-decoration: none;
 }
-#nav li:not(:last-child) {
-    margin-right: 70px
-}
+
 #nav a:hover,
 #nav a:focus {
     color: #0080ff;
@@ -60,6 +59,7 @@ html {
 
 .box {
     background-image: url("images/background_index.jpg");
+    margin-top: 80px;
 }
 .block1 {
     display: flex;
@@ -348,16 +348,15 @@ label {
 /*----------------------------------------*/
 .form {
     margin: 40px auto -100px auto;
-    overflow: hidden;
 
 }
 
 .bord {
-    width: 640px;
+    width: 740px;
     height: 100px;
     background-color: white;
     position: relative;
-    top: -80px;
+    top: -100px; /*подымаем блок вверх, чтобы закрыть гугловский текст*/
 }
 /*_____________________________________________________________________________________footer на всех страницах*/
 .footer {
