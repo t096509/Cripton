@@ -95,41 +95,6 @@ html {
     text-align: left;
 }
 
-.block2 {
-    display: flex;
-    font-size: 26px;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-.block2 p {
-    margin: 0;
-}
-
-.article2_1 {
-    display: flex;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.article2_1_left {
-    flex: 1;
-    margin: auto;
-    text-align: center;
-}
-
-.article2_1_right {
-    flex: 1;
-}
-
-
-.article2_2 {
-    border-radius: 20px;
-    text-align: left;
-}
-
-
 /*_________________________________________________________________________________________development*/
 .content {
     font-size: 26px;
