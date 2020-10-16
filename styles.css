@@ -335,10 +335,54 @@ label {
 .box_contacts {
     display: flex;
     background-image: url("images/background_contacts.jpg");
+    flex-direction: column;
+}
+.cont {
+    display: flex;
+}
+.telegram {
+    flex: 1;
+    text-align: center;
+}
+.viber {
+    flex: 1;
+    text-align: center;
+}
+.whatsapp {
+    flex: 1;
+    text-align: center;
 }
 
+.cont p {
+    font-size: 26px;
+}
+/*__________________________анимация логотипов*/
+.cont img {
+    -webkit-box-shadow: 10px 10px 29px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 29px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 29px -2px rgba(0, 0, 0, 0.75);
+
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0 solid #000000;
+}
+.cont img:hover {
+    animation: logo-rotate 0.4s alternate infinite ease-in;
+}
+
+@keyframes logo-rotate {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+
+}
+/*----------------------------------------*/
 .form {
-    margin: auto;
+    margin: 40px auto -100px auto;
     overflow: hidden;
 
 }
