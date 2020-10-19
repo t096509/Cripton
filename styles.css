@@ -6,6 +6,12 @@ html {
     margin-top: 0;
     font-family: "Candara", sans-serif;
 }
+
+/*img {*/
+/*    display: block;*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*}*/
 .container {
     display: flex;
     flex-direction: column;
@@ -59,7 +65,7 @@ html {
 
 .box {
     background-image: url("images/background_index.jpg");
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .block1 {
     display: flex;
@@ -92,14 +98,17 @@ html {
 
 .article1_2 {
     border-radius: 20px;
-    text-align: left;
+    text-align: justify;
 }
 
 /*_________________________________________________________________________________________development*/
 .content {
     font-size: 26px;
-    text-align: left;
+    text-align: justify;
     background-image: url("images/background_dev.jpg");
+}
+.content h2 {
+    text-align: left;
 }
 .title {
     display: flex;
@@ -141,7 +150,7 @@ html {
 
 .article1_right {
     flex: 2;
-    margin: auto;
+    margin: auto 40px auto 0;
     padding: 20px;
 }
 
@@ -179,8 +188,15 @@ html {
 
 .article3_right {
     flex: 2;
-    margin: auto;
+    margin: auto 40px auto 0;
     padding: 20px;
+}
+
+.hidden {
+    float: right;
+    margin: 0 0 5px 20px;
+    padding-top: 30px;
+    display: none;
 }
 
 /*________________________________________________________________________________________________faq*/

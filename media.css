@@ -1,28 +1,152 @@
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1250px) {
 
     .container {
         padding: 0;
     }
 
     .header {
-        flex-wrap: wrap;  /* для переноса */
         position: unset; /*расфиксируем header*/
+        justify-content: space-around;
         padding: 0 10px;
     }
 
+    .logo {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    #nav {
+        padding: 0;
+    }
+
+    .box {
+        margin-top: 20px;
+    }
+    .block1 {
+        margin-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .block1 img {
+        width: 300px;
+    }
+
+    .content img {
+        width: 300px;
+    }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 900px) {
 
     .container {
         padding: 0;
     }
+
+    .header {
+        position: unset; /*расфиксируем header*/
+        justify-content: space-around;
+        padding: 0 10px;
+    }
+
+    .logo {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    #nav {
+        padding: 0;
+    }
+
+    .block1 {
+        margin-top: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .block1 img {
+        width: 230px;
+    }
+
+    .hidden {
+        float: right;
+        margin: 0 0 5px 20px;
+        display: block;
+    }
+
+    .title {
+        display: block;
+    }
+    .title_left {
+        padding: 0;
+    }
+
+    .article1_left {
+        display: none;
+    }
+    .article1_right {
+        margin: auto;
+    }
+
+    .article2_right {
+        display: none;
+    }
+    .article2_left {
+        margin: 0;
+    }
+
+    .article3_left {
+        display: none;
+    }
+    .article3_right {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .container {
+        padding: 0;
+    }
+
+    .header {
+        flex-wrap: wrap;  /* для переноса элементов в столбик*/
+        position: unset; /*расфиксируем header*/
+        padding: 0 10px;
+    }
+
+    .hidden {
+        float: unset;
+        text-align: center;
+        padding: 0;
+    }
+    .hidden img {
+        width: 250px;
+    }
+    .round {
+        border-radius: 60px; /*закругление углов картинок*/
+    }
+
 
     #nav {
         padding: 5px 0;
     }
 
     .logo {
+        display: block;
         margin: auto;
+        text-align: center;
     }
 
     #nav li {
@@ -34,15 +158,13 @@
         margin: 0 auto;
     }
 
-    .header {
-        flex-wrap: wrap;  /* для переноса элементов в столбик*/
-        position: unset; /*расфиксируем header*/
-        padding: 0 10px;
-    }
-
     .block1 {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .article1_1 {
+        display: block; /*Чтобы выстроить заголовок и картинку друг под другом*/
     }
 
     h1 {
@@ -60,6 +182,9 @@
     .cont a img {
         width: 30%;
 
+    }
+    .article1_1 {
+        justify-content: space-around;
     }
 
     .article1_1_right {
@@ -104,8 +229,123 @@
     .contacts {
         padding: 10px;
     }
-    /*.sideitem{ flex-direction:row; flex-basis:100%; }*/
+}
 
-    /*.item{ margin-left:0; margin-top:10px; }*/
-    /*.item:first-child{ margin-bottom:0; margin-right:10px; }*/
+@media screen and (max-width: 400px) {
+
+    .container {
+        padding: 0;
+    }
+
+    .header {
+        flex-wrap: wrap; /* для переноса элементов в столбик*/
+        position: unset; /*расфиксируем header*/
+        padding: 0 10px;
+    }
+
+    #nav {
+        padding: 5px 0;
+    }
+
+    .logo {
+        display: none;
+        margin: auto;
+        text-align: center;
+    }
+
+    #nav li {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #nav li a {
+        margin: 0 auto;
+    }
+
+    .block1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .article1_1 {
+        display: block; /*Чтобы выстроить заголовок и картинку друг под другом*/
+    }
+
+    .title_right {
+        padding: 0 10px 0 10px;
+    }
+    .title_left {
+        margin: 20px auto 0 auto;
+    }
+    .title_right p {
+        margin: 0 auto 10px auto;
+    }
+    .hidden {
+        margin: 0;
+    }
+
+    h1 {
+        margin: auto;
+        font-size: 1.5em;
+    }
+
+    .block1 img {
+        width: 170px;
+    }
+
+    .links_footer a img {
+        width: 30%;
+    }
+
+    .cont a img {
+        width: 30%;
+
+    }
+
+    .article1_1 {
+        justify-content: space-around;
+    }
+
+    .article1_1_right {
+        margin: auto;
+    }
+
+    iframe {
+        width: 540px
+    }
+
+    .box_contacts {
+        margin: auto;
+    }
+
+    .form {
+        margin: auto;
+        width: 500px;
+    }
+
+    .bord {
+        width: 500px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .links_footer a img {
+        width: 15%;
+    }
+
+    .links_top {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .links {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .contacts {
+        padding: 10px;
+    }
 }
