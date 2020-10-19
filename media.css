@@ -243,6 +243,10 @@
     }
     .box_inner {
         margin-top: 20px;
+        font-size: 1.1em;
+    }
+    .answer {
+        font-size: 1.0em;
     }
     .content {
         font-size: 18px;
@@ -360,5 +364,9 @@
     }
     .round {
         margin: 10px;
+    }
+    .demo {
+        padding: 0;
+        margin-top: 10px;
     }
 }
