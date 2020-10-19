@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {/*------------------------------------------------------------------------*/
 
     .container {
         padding: 0;
@@ -114,7 +114,7 @@
 
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {/*----------------------------------------------------------------------------*/
 
     .container {
         padding: 0;
@@ -161,10 +161,18 @@
     .block1 {
         padding-left: 20px;
         padding-right: 20px;
+        font-size: 18px;
     }
 
     .article1_1 {
         display: block; /*Чтобы выстроить заголовок и картинку друг под другом*/
+    }
+    .title_right {
+        padding: 0 10px 10px 10px;
+    }
+    .title_left {
+        height: auto;
+        margin-top: 20px;
     }
 
     h1 {
@@ -172,7 +180,7 @@
     }
 
     .block1 img {
-        width: 170px;
+        width: 190px;
     }
 
     .links_footer a img {
@@ -229,10 +237,20 @@
     .contacts {
         padding: 10px;
     }
+    h1 {
+        margin: auto;
+        font-size: 1.5em;
+    }
+    .box_inner {
+        margin-top: 20px;
+    }
+    .content {
+        font-size: 18px;
+    }
+
 }
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 400px) {/*---------------------------------------------------------------------------*/
     .container {
         padding: 0;
     }
@@ -245,6 +263,7 @@
 
     #nav {
         padding: 5px 0;
+        font-size: 20px;
     }
 
     .logo {
@@ -284,15 +303,6 @@
         margin: 0;
     }
 
-    h1 {
-        margin: auto;
-        font-size: 1.5em;
-    }
-
-    .block1 img {
-        width: 170px;
-    }
-
     .links_footer a img {
         width: 30%;
     }
@@ -347,5 +357,8 @@
 
     .contacts {
         padding: 10px;
+    }
+    .round {
+        margin: 10px;
     }
 }
