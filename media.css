@@ -200,7 +200,8 @@
     }
 
     iframe {
-        width: 540px
+        width: 400px;
+        height: 800px;
     }
 
     .box_contacts {
@@ -208,12 +209,12 @@
     }
 
     .form {
-        margin: auto;
-        width: 500px;
+        margin: 20px auto 0 auto;
+        width: 400px;
     }
 
     .bord {
-        width: 500px;
+        width: 400px;
     }
 
     .footer {
@@ -250,6 +251,9 @@
     }
     .content {
         font-size: 18px;
+    }
+    .cont p {
+        font-size: 1.2em;
     }
 
 }
@@ -325,7 +329,8 @@
     }
 
     iframe {
-        width: 540px
+        width: 250px;
+        height: 1000px;
     }
 
     .box_contacts {
@@ -333,12 +338,14 @@
     }
 
     .form {
-        margin: auto;
-        width: 500px;
+        width: 250px;
+        height: 1000px;
     }
 
     .bord {
-        width: 500px;
+        width: 250px;
+        height: 200px;
+        margin-top: -80px;
     }
 
     .footer {
