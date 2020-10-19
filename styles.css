@@ -363,7 +363,7 @@ label {
 }
 /*----------------------------------------*/
 .form {
-    margin: 40px auto -100px auto;
+    margin: 40px auto 0 auto;
 
 }
 
@@ -372,7 +372,7 @@ label {
     display: flex;
     background: #83c2ff;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
     /*градиент*/
     /*background: rgba(168,223,250,1);*/
     /*background: -moz-linear-gradient(top, rgba(168,223,250,1) 0%, rgba(157,190,207,1) 46%, rgba(10,119,173,1) 100%);*/
