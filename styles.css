@@ -7,6 +7,10 @@ html {
     font-family: "Candara", sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 p {
     text-indent: 40px; /*отступы в первой строке параграфа*/
 }
@@ -20,8 +24,7 @@ p {
 .container {
     display: flex;
     flex-direction: column;
-    background: white;
-    padding-top: 120px;
+    background-image: url("images/background_index.jpg");
 }
 
 .header {
@@ -29,9 +32,8 @@ p {
     background: #83c2ff;
     position: fixed;
     top: 0;
-    right: 8px;
-    left: 8px;
-    border-radius: 20px;
+    right: 0;
+    left: 0;
     font-weight: bold;
 }
 .logo {
@@ -69,8 +71,7 @@ p {
 /*_____________________________________________________________________________________________index*/
 
 .box {
-    background-image: url("images/background_index.jpg");
-    margin-top: 50px;
+    margin-top: 120px;
 }
 .block1 {
     display: flex;
@@ -79,6 +80,7 @@ p {
     justify-content: center;
     padding-left: 20%;
     padding-right: 20%;
+    padding-bottom: 40px;
 }
 .block1 p {
     margin: 0;
@@ -126,6 +128,10 @@ p {
     -moz-box-shadow: 3px 5px 18px 0 rgba(147,184,230,1);
     box-shadow: 3px 5px 18px 0 rgba(147,184,230,1);
 }
+.button:active, /*удаление черной рамки с кнопки при нажатии*/
+.button:focus {
+    outline: none;
+}
 
 .button h2 {
     margin: 2px 4px 4px 4px;
@@ -147,7 +153,7 @@ p {
 .study1 {
     display: flex;
     justify-content: space-around;
-    margin: 20px 0;
+    margin: 120px 0 20px 0;
     padding: 0 100px;
     font-size: 22px;
 }
@@ -171,6 +177,7 @@ p {
 .study1_left_bottom {
     padding: 20px;
     text-align: center;
+    background-color: white;
 }
 
 .study1_left_bottom p {
@@ -208,6 +215,7 @@ figure.fluidratio1 {
 .study1_right_bottom {
     padding: 20px;
     text-align: center;
+    background-color: white;
 }
 
 .study1_right_bottom p {
@@ -254,6 +262,7 @@ figure.fluidratio2 {
 .study2_left_bottom {
     padding: 20px;
     text-align: center;
+    background-color: white;
 }
 
 .study2_left_bottom p {
@@ -290,6 +299,7 @@ figure.fluidratio3 {
 .study2_right_bottom {
     padding: 20px;
     text-align: center;
+    background-color: white;
 }
 
 .study2_right_bottom p {
@@ -326,6 +336,7 @@ figure.fluidratio4 {
     font-size: 26px;
     text-align: justify;
     background-image: url("images/background_dev.jpg");
+    margin-top: 100px;
 }
 .content h2 {
     text-align: left;
@@ -339,13 +350,13 @@ figure.fluidratio4 {
     width: 300px;
     height: 7em;
     margin: auto; /*центрируем текст "Смарт-контракты" по вертикали*/
-    padding: 30px;
+    padding: 30px 30px 30px 60px;
     text-align: center;
 }
 
 .title_right {
     flex: 1;
-    padding: 30px;
+    padding: 30px 60px 30px 30px;
     margin: auto;
 }
 
@@ -353,7 +364,6 @@ figure.fluidratio4 {
     display: flex;
     margin: auto;
     background-color: rgba(100, 149, 237, 0.3);
-    border-radius: 20px;
 }
 
 .article1_left {
@@ -396,7 +406,6 @@ figure.fluidratio4 {
 .article3 {
     display: flex;
     background-color: rgba(100, 149, 237, 0.3);
-    border-radius: 20px;
 }
 
 .article3_left {
@@ -537,6 +546,7 @@ label {
     display: flex;
     background-image: url("images/background_contacts.jpg");
     flex-direction: column;
+    margin-top: 100px;
 }
 .cont {
     display: flex;
@@ -591,8 +601,6 @@ label {
 .footer {
     display: flex;
     background: #83c2ff;
-    border-radius: 20px;
-    margin-top: 10px;
     /*градиент*/
     /*background: rgba(168,223,250,1);*/
     /*background: -moz-linear-gradient(top, rgba(168,223,250,1) 0%, rgba(157,190,207,1) 46%, rgba(10,119,173,1) 100%);*/
@@ -652,3 +660,133 @@ label {
                 box-shadow 0.2s linear;
 }
 
+/*_______________________________________________________________________________________course_*/
+
+.container_course {
+    display: flex;
+    flex-direction: column;
+    background-color: #bfe5f4;
+}
+
+.container_course_top {
+    display: flex;
+    padding: 20px;
+    background-color: royalblue;
+}
+
+.container_course_top_left {
+    flex: 3;
+    padding: 40px;
+    color: white;
+    text-align: justify;
+}
+
+.container_course_top_left h1 {
+    font-size: 3.2em;
+}
+
+.container_course_top_left h2 {
+    text-indent: 40px; /*отступы в первой строке параграфа*/
+}
+
+.container_course_top_left h3 {
+    font-size: 1.8em;
+    margin: 2px 4px 4px 4px;
+}
+
+.container_course_top_right {
+    flex: 2;
+    display: flex;
+    text-align: center;
+}
+
+.container_course_bottom {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/background_base.jpg");
+}
+
+.container_course_bottom_center {
+    padding: 40px;
+    margin: 10px auto;
+    font-family: cursive;
+    font-size: 1.6vw;
+    color: #7300c6;
+    /*overflow: hidden;*/
+    /*align-content: center;*/
+}
+.container_course_bottom_center h1 {
+    font-family: "Segoe Print",serif; /* подбор шрифтов - https://wordmark.it/*/
+    color: rgb(176, 0, 255);
+    font-size: 2.6vw;
+    margin: 0;
+    padding: 0;
+}
+.container_course_bottom_center h2 {
+    font-family: "Segoe Print",serif; /* подбор шрифтов - https://wordmark.it/*/
+    color: #654d96;
+    font-size: 2.2vw;
+    margin: 0;
+    padding: 0;
+}
+
+.container_course_bottom_center ul {
+    counter-reset: name;      /*Создаем новый счетчик для каждого тега <ul>*/
+    list-style-type: none;      /* Убираем исходную нумерацию у списка */
+}
+
+.container_course_bottom_center li::before {
+    counter-increment: name;           /*Увеличиваем значение счетчика*/
+    content: counters(name,". ")". ";   /*Выводим число, используя разделитель '.'*/
+}
+
+.container_course_bottom_center_top {
+    text-align: center;
+}
+
+.container_course_top_right_relative {
+    position: relative;
+    top: 80px;
+    left: 10px;
+    margin: auto;
+    max-width: 500px;
+    background-color: white;
+    -webkit-box-shadow: 5px 5px 23px 2px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 23px 2px rgba(0,0,0,1);
+    box-shadow: 5px 5px 23px 2px rgba(0,0,0,1);
+    border-radius: 10px;
+
+
+}
+
+.box_picture {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.box_text {
+    background-color:white;
+    padding: 0 80px 40px 80px;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.2em;
+    color: darkblue;
+}
+
+.box_text h1 {
+    color: #8a70c9;
+}
+
+.header_course {
+    display: flex;
+    background: #83c2ff;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-weight: bold;
+}
+
+.box_container_course {
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
