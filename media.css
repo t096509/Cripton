@@ -40,6 +40,35 @@
     .content img {
         width: 300px;
     }
+
+    /*________________________________________________________________________________________study*/
+
+    .study1 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .study1_left {
+        margin: 0 auto;
+    }
+
+    .study1_right {
+        margin: 40px auto 0 auto;
+    }
+
+    .study2 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .study2_left {
+        margin: 0 auto;
+    }
+
+    .study2_right {
+        margin: 40px auto 0 auto;
+    }
+
 }
 
 @media screen and (max-width: 900px) {/*------------------------------------------------------------------------*/
@@ -213,6 +242,9 @@
         width: 400px;
     }
 
+    /*________________________________________________________________________________________footer*/
+
+
     .footer {
         flex-direction: column;
     }
@@ -337,8 +369,7 @@
         width: 340px;
         height: 950px;
     }
-
-
+/*________________________________________________________________________________________footer*/
     .footer {
         flex-direction: column;
     }
