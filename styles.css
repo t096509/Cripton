@@ -7,11 +7,16 @@ html {
     font-family: "Candara", sans-serif;
 }
 
+p {
+    text-indent: 40px; /*отступы в первой строке параграфа*/
+}
+
 /*img {*/
 /*    display: block;*/
 /*    max-width: 100%;*/
 /*    height: auto;*/
 /*}*/
+
 .container {
     display: flex;
     flex-direction: column;
@@ -100,6 +105,197 @@ html {
     border-radius: 20px;
     text-align: justify;
 }
+/*_______________________________________________________________________________________________study*/
+.content_study {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /*равноверное распределение отступов между блоками*/
+}
+
+.button {
+    color: #0080ff;
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid #3ca8ff;
+    -webkit-box-shadow: 3px 5px 18px 0 rgba(147,184,230,1);
+    -moz-box-shadow: 3px 5px 18px 0 rgba(147,184,230,1);
+    box-shadow: 3px 5px 18px 0 rgba(147,184,230,1);
+}
+
+.button h2 {
+    margin: 2px 4px 4px 4px;
+}
+
+.fontButton {
+    font-size: 0.6em;
+}
+
+.button:hover {
+    transform: scale(1.15);
+    transition: transform 0.2s ease-in, /*замедление анимации*/
+    box-shadow 0.2s linear;
+    background-color: #3ca8ff;
+    color: white;
+    cursor: pointer;
+}
+
+.study1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 0 100px;
+    font-size: 22px;
+
+}
+
+.study1_left {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    background-color: white;
+    -webkit-box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    -moz-box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    border-radius: 10px;
+}
+
+.study1_left:hover {
+    -webkit-box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+    -moz-box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+    box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+}
+
+.study1_left_bottom {
+    padding: 20px;
+    text-align: center;
+}
+
+figure.fluidratio1 {
+    margin: 0;
+    padding-top: 74.8%;  /* slope */
+    background-image: url("images/users.png");
+    background-size: cover;
+    -moz-background-size: cover;  /* Firefox 3.6 */
+    background-position: center;  /* Internet Explorer 7/8 */
+    border-radius: 10px 10px 0 0;
+}
+
+.study1_right {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    -webkit-box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    -moz-box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    border-radius: 10px;
+}
+
+.study1_right:hover {
+    -webkit-box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+    -moz-box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+    box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+}
+
+.study1_right_bottom {
+    padding: 20px;
+    text-align: center;
+}
+
+figure.fluidratio2 {
+    margin: 0;
+    padding-top: 74.8%;  /* slope */
+    background-image: url("images/base.png");
+    background-size: cover;
+    -moz-background-size: cover;  /* Firefox 3.6 */
+    background-position: center;  /* Internet Explorer 7/8 */
+    border-radius: 10px 10px 0 0;
+}
+
+
+.study2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 0 100px;
+    font-size: 22px;
+
+}
+
+.study2_left {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    -webkit-box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    -moz-box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    border-radius: 10px;
+}
+
+.study2_left:hover {
+    -webkit-box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+    -moz-box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+    box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+}
+
+.study2_left_bottom {
+    padding: 20px;
+    text-align: center;
+}
+
+figure.fluidratio3 {
+    margin: 0;
+    padding-top: 74.8%;  /* slope */
+    background-image: url("images/advance.png");
+    background-size: cover;
+    -moz-background-size: cover;  /* Firefox 3.6 */
+    background-position: center;  /* Internet Explorer 7/8 */
+    border-radius: 10px 10px 0 0;
+}
+
+.study2_right {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    -webkit-box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    -moz-box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    box-shadow: 4px 5px 18px 3px rgba(147,184,230,1);
+    border-radius: 10px;
+}
+
+.study2_right:hover {
+    -webkit-box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+    -moz-box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+    box-shadow: 5px 5px 23px 2px rgba(73,118,173,1);
+}
+
+.study2_right_bottom {
+    padding: 20px;
+    text-align: center;
+}
+
+figure.fluidratio4 {
+    margin: 0;
+    padding-top: 74.8%;  /* slope */
+    background-image: url("images/individual.png");
+    background-size: cover;
+    -moz-background-size: cover;  /* Firefox 3.6 */
+    background-position: center;  /* Internet Explorer 7/8 */
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*_________________________________________________________________________________________development*/
 .content {
