@@ -700,10 +700,28 @@ label {
     text-align: center;
 }
 
-.container_course_bottom {
+.container_course_bottom_base {
     display: flex;
     justify-content: center;
     background-image: url("images/background_base.jpg");
+}
+
+.container_course_bottom_lite {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/background_lite.jpg");
+}
+
+.container_course_bottom_advance {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/background_advance.jpg");
+}
+
+.container_course_bottom_individual {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/background_individual.jpg");
 }
 
 .container_course_bottom_center {
