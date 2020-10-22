@@ -25,7 +25,7 @@
     }
 
     .box {
-        margin-top: 20px;
+        margin-top: 0;
     }
     .block1 {
         margin-top: 30px;
@@ -43,6 +43,10 @@
 
     .words {
         font-family: "Arial Black", serif;
+    }
+
+    .box_contacts {
+        margin: 0;
     }
 
     /*________________________________________________________________________________________study*/
@@ -89,6 +93,10 @@
 
     .container_course_top_left h2 {
         font-size: 1.2em;
+    }
+
+    .content {
+        margin-top: 0;
     }
 
 
@@ -212,7 +220,7 @@
 
 }
 
-@media screen and (max-width: 680px) {/*----------------------------------------------------------------------------*/
+@media screen and (max-width: 745px) {/*----------------------------------------------------------------------------*/
 
     .container {
         padding: 0;
@@ -299,17 +307,19 @@
 
     iframe {
         width: 400px;
-        height: 800px;
-    }
-
-    .box_contacts {
-        margin: auto;
+        height: 1200px;
     }
 
     .form {
         margin: 20px auto 0 auto;
         width: 400px;
     }
+
+    .form_order {
+        margin: 0 auto;
+        width: 400px;
+    }
+
 
     /*________________________________________________________________________________________footer*/
 
@@ -377,6 +387,8 @@
     form {
         margin-top: 20px;
     }
+
+
 }
 
 @media screen and (max-width: 400px) {/*---------------------------------------------------------------------------*/
@@ -451,7 +463,7 @@
 
     iframe {
         width: 340px;
-        height: 950px;
+        height: 1250px;
     }
 
     .box_contacts {
@@ -462,7 +474,13 @@
         width: 340px;
         height: 950px;
     }
-/*________________________________________________________________________________________footer*/
+
+    /*.form_order {*/
+    /*    width: 340px;*/
+    /*    height: 950px;*/
+    /*}*/
+
+    /*________________________________________________________________________________________footer*/
     .footer {
         flex-direction: column;
     }

@@ -24,8 +24,11 @@ p {
 .container {
     display: flex;
     flex-direction: column;
-    background-image: url("images/background_index.jpg");
     background-clip: border-box;
+}
+
+.container_order {
+    background-image: url("images/background_contacts.jpg");
 }
 
 .header {
@@ -76,6 +79,7 @@ p {
 
 .box {
     margin-top: 120px;
+    background-image: url("images/background_index.jpg");
 }
 .block1 {
     display: flex;
@@ -610,7 +614,10 @@ label {
 /*----------------------------------------*/
 .form {
     margin: 40px auto 0 auto;
+}
 
+.form_order {
+    margin: 0 auto;
 }
 
 /*_____________________________________________________________________________________footer на всех страницах*/
