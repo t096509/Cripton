@@ -25,11 +25,15 @@ p {
     display: flex;
     flex-direction: column;
     background-image: url("images/background_index.jpg");
+    background-clip: border-box;
 }
 
 .header {
     display: flex;
     background: #83c2ff;
+    background: -webkit-linear-gradient(#fafff4, #83c2ff);
+    background:    -moz-linear-gradient(#fafff4, #83c2ff);
+    background:         linear-gradient(#edefff, #83c2ff, #edefff);
     position: fixed;
     top: 0;
     right: 0;
@@ -112,6 +116,7 @@ p {
     display: flex;
     flex-direction: column;
     background-image: url("images/background_study.jpg");
+    background-clip: border-box;
 }
 
 .mark {
@@ -336,6 +341,7 @@ figure.fluidratio4 {
     font-size: 26px;
     text-align: justify;
     background-image: url("images/background_dev.jpg");
+    background-clip: border-box;
     margin-top: 100px;
 }
 .content h2 {
@@ -434,6 +440,7 @@ figure.fluidratio4 {
     display: flex;
     flex-grow: 1;
     background-image: url("images/background_faq.jpg");
+    background-clip: border-box;
 }
 
 .box_inner {
@@ -545,6 +552,7 @@ label {
 .box_contacts {
     display: flex;
     background-image: url("images/background_contacts.jpg");
+    background-clip: border-box;
     flex-direction: column;
     margin-top: 100px;
 }
