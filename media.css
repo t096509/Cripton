@@ -481,4 +481,9 @@
         padding: 0;
         margin-top: 10px;
     }
+
+    .container_course_top_left h1 {
+        font-size: 2.2em;
+    }
+
 }
