@@ -141,6 +141,30 @@
         margin: 0;
     }
 
+    /*_______________________________________________________________________________________course_*/
+
+    .box_picture {
+        display: none;
+    }
+
+    .container_course_top {
+        flex-direction: column;
+    }
+
+    .container_course_bottom_center {
+        margin: 40px auto 0 auto;
+        font-size: 2.8vw;
+    }
+
+    .container_course_bottom_center h1 {
+        font-size: 4.6vw;
+    }
+
+    .container_course_bottom_center h2 {
+        font-size: 3.6vw;
+    }
+
+
 }
 
 @media screen and (max-width: 680px) {/*----------------------------------------------------------------------------*/
