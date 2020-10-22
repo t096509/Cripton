@@ -69,6 +69,15 @@
         margin: 40px auto 0 auto;
     }
 
+    .container_course_top_left h1 {
+        font-size: 1.8em;
+    }
+
+    .container_course_top_left h2 {
+        font-size: 1.2em;
+    }
+
+
 }
 
 @media screen and (max-width: 900px) {/*------------------------------------------------------------------------*/
@@ -147,8 +156,26 @@
         display: none;
     }
 
+    .container_course {
+        padding: 0;
+    }
+
     .container_course_top {
         flex-direction: column;
+        padding: 10px;
+    }
+
+    .container_course_top_left {
+        padding: 40px 10px 10px 10px;
+        /*margin: auto;*/
+    }
+
+    .container_course_top_left h1 {
+        font-size: 2.2em;
+    }
+
+    .container_course_top_left h2 {
+        font-size: 1.2em;
     }
 
     .container_course_bottom_center {
@@ -162,6 +189,10 @@
 
     .container_course_bottom_center h2 {
         font-size: 3.6vw;
+    }
+
+    .container_course_top_right_relative {
+        top: 60px;
     }
 
 
@@ -308,6 +339,30 @@
         font-size: 1.2em;
     }
 
+    .container_course_bottom_center h1 {
+        font-size: 7.6vw;
+    }
+
+    .container_course_bottom_center h2 {
+        font-size: 6.6vw;
+    }
+
+    .container_course_bottom_center {
+        padding: 40px 0 0 0;
+        font-size: 4.6vw;
+    }
+
+    .container_course_top_left h1 {
+        font-size: 2.8em;
+    }
+
+    .container_course_top_left h2 {
+        font-size: 1.4em;
+    }
+
+
+
+
 }
 
 @media screen and (max-width: 400px) {/*---------------------------------------------------------------------------*/
@@ -334,7 +389,7 @@
 
     #nav li {
         display: block;
-        margin: 0 auto;
+        margin: 5px auto;
     }
 
     #nav li a {

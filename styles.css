@@ -777,7 +777,7 @@ label {
 .container_course_top_right_relative {
     position: relative;
     top: 80px;
-    left: 10px;
+    /*left: 10px;*/
     margin: auto;
     max-width: 500px;
     background-color: white;
