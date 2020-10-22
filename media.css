@@ -41,6 +41,10 @@
         width: 300px;
     }
 
+    .words {
+        font-family: Candara sans-serif;
+    }
+
     /*________________________________________________________________________________________study*/
 
     .content_study {
@@ -483,7 +487,7 @@
     }
 
     .container_course_top_left h1 {
-        font-size: 2.2em;
+        font-size: 1.8em;
     }
 
 }
