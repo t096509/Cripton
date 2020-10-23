@@ -104,8 +104,9 @@
     .box_inner {
         padding-top: 0;
     }
-    .cont {
+    .costyl {
         padding-top: 0;
+        margin: 20px 0 20px 0;
     }
 
 
@@ -467,9 +468,9 @@
         height: 1250px;
     }
 
-    .box_contacts {
-        margin: auto;
-    }
+    /*.box_contacts {*/
+    /*    margin: auto;*/
+    /*}*/
 
     .form {
         width: 340px;
