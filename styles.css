@@ -46,11 +46,20 @@ p {
 .logo {
     flex: 1;
     display: flex;
-    padding: 1%;
+    padding: 2px;
+    justify-content: flex-end;
 }
 .logo a img:hover {
-    transform: scale(1.05);
-
+    -o-transform: translate(-20px, 20px);
+    -ms-transform: translate(-20px, 20px);
+    -moz-transform: translate(-20px, 20px);
+    -webkit-transform: translate(-20px, 20px);
+    transform: translate(2px, 2px);
+    /*transform: scale(1.05);*/
+}
+.logo_img {
+    display: block;
+    /*margin: auto;*/
 }
 .menu {
     flex-grow: 1;
@@ -78,14 +87,17 @@ p {
 /*_____________________________________________________________________________________________index*/
 
 .box {
-    margin-top: 120px;
+    /*margin-top: 120px;*/
+    /*padding-bottom: 120px;*/
     background-image: url("images/background_index.jpg");
+    background-size: cover;
 }
 .block1 {
     display: flex;
     font-size: 26px;
     flex-direction: column;
     justify-content: center;
+    margin-top: 130px;
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 40px;
@@ -120,7 +132,6 @@ p {
     display: flex;
     flex-direction: column;
     background-image: url("images/background_study.jpg");
-    background-clip: border-box;
 }
 
 .mark {
@@ -195,6 +206,8 @@ p {
     padding: 20px;
     text-align: center;
     background-color: white;
+    border-radius: 0 0 10px 10px;
+    height: 100%;
 }
 
 .study1_left_bottom p {
@@ -233,6 +246,9 @@ figure.fluidratio1 {
     padding: 20px;
     text-align: center;
     background-color: white;
+    border-radius: 0 0 10px 10px;
+    height: 100%;
+
 }
 
 .study1_right_bottom p {
@@ -280,6 +296,8 @@ figure.fluidratio2 {
     padding: 20px;
     text-align: center;
     background-color: white;
+    border-radius: 0 0 10px 10px;
+    height: 100%;
 }
 
 .study2_left_bottom p {
@@ -317,6 +335,8 @@ figure.fluidratio3 {
     padding: 20px;
     text-align: center;
     background-color: white;
+    border-radius: 0 0 10px 10px;
+    height: 100%;
 }
 
 .study2_right_bottom p {
@@ -354,7 +374,6 @@ figure.fluidratio4 {
     text-align: justify;
     background-image: url("images/background_dev.jpg");
     background-clip: border-box;
-    margin-top: 100px;
 }
 .content h2 {
     text-align: left;
@@ -362,6 +381,7 @@ figure.fluidratio4 {
 .title {
     display: flex;
     margin: auto;
+    padding-top: 80px;
 }
 .title_left {
     flex: 1;
@@ -459,8 +479,7 @@ figure.fluidratio4 {
     flex: 1;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+padding: 80px 15px 0 15px;
     box-sizing: border-box;
     width: 1160px;
     text-align: center;
@@ -566,10 +585,10 @@ label {
     background-image: url("images/background_contacts.jpg");
     background-clip: border-box;
     flex-direction: column;
-    margin-top: 100px;
 }
 .cont {
     display: flex;
+    padding-top: 80px;
 }
 .telegram {
     flex: 1;
