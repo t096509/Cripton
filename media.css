@@ -406,12 +406,6 @@
         font-size: 20px;
     }
 
-    .logo {
-        /*display: none;*/
-        margin: auto;
-        text-align: center;
-    }
-
     #nav li {
         display: block;
         margin: 5px auto;
@@ -522,5 +516,58 @@
         font-size: 1.4em;
     }
 
+    .menu {
+    display: none;
+}
+    .media_menu {
+        display: block;
+        flex: 1;
+        margin: auto;
+    }
+    .logo {
+        display: flex;
+    }
+
+    .logo_img {
+        flex: 1;
+    }
+
+    .wrap-myMenu {
+        display: inline-block;
+    }
+    .main-myButton {
+        font-size: 40px;
+        color: #0000a0;
+        border: none;
+        background: none;
+    }
+    .content_menu {
+        display: none;
+        position: absolute;
+        background: -webkit-linear-gradient(#dcdeee, #83c2ff, #dcdeee);
+        background:    -moz-linear-gradient(#dcdeee, #83c2ff, #dcdeee);
+        background:         linear-gradient(#dcdeee, #83c2ff, #dcdeee);
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        list-style-type: none;
 
     }
+    .content_menu a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: "Candara", sans-serif;
+        color: white;
+        font-size: 32px;
+    }
+
+    .main-myButton:active,
+    .main-myButton:focus {
+        outline: none;
+        border: 2px #0080ff;
+        color: #3ca8ff;
+    }
+
+
+
+}

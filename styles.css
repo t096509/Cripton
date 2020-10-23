@@ -34,9 +34,9 @@ p {
 .header {
     display: flex;
     background: #83c2ff;
-    background: -webkit-linear-gradient(#edefff, #83c2ff, #edefff);
-    background:    -moz-linear-gradient(#edefff, #83c2ff, #edefff);
-    background:         linear-gradient(#edefff, #83c2ff, #edefff);
+    background: -webkit-linear-gradient(#dcdeee, #83c2ff, #dcdeee);
+    background:    -moz-linear-gradient(#dcdeee, #83c2ff, #dcdeee);
+    background:         linear-gradient(#dcdeee, #83c2ff, #dcdeee);
     position: fixed;
     top: 0;
     right: 0;
@@ -49,6 +49,11 @@ p {
     padding: 2px;
     justify-content: flex-end;
 }
+
+.media_menu {
+    display: none;
+}
+
 .logo a img:hover {
     -o-transform: translate(-20px, 20px);
     -ms-transform: translate(-20px, 20px);
