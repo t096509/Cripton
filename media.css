@@ -336,7 +336,7 @@
     }
 
     .links_footer a img {
-        width: 15%;
+        width: 10%;
     }
 
     .links_top {
@@ -357,7 +357,7 @@
         font-size: 1.5em;
     }
     .box_inner {
-        margin-top: 20px;
+        margin: 20px 0 20px 0;
         font-size: 1.1em;
     }
     .answer {
