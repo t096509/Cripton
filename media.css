@@ -10,6 +10,10 @@
         padding: 0 10px;
     }
 
+    .title {
+        padding: 0;
+    }
+
     .logo {
         display: block;
         margin: auto;
@@ -96,6 +100,12 @@
 
     .content {
         margin-top: 0;
+    }
+    .box_inner {
+        padding-top: 0;
+    }
+    .cont {
+        padding-top: 0;
     }
 
 
@@ -311,12 +321,10 @@
 
     .form {
         margin: 20px auto 0 auto;
-        width: 400px;
     }
 
     .form_order {
         margin: 0 auto;
-        width: 400px;
     }
 
 
@@ -390,7 +398,7 @@
 
 }
 
-@media screen and (max-width: 400px) {/*---------------------------------------------------------------------------*/
+@media screen and (max-width: 480px) {/*---------------------------------------------------------------------------*/
     .container {
         padding: 0;
     }
@@ -425,7 +433,7 @@
     }
 
     .title_right {
-        padding: 0 10px 0 10px;
+        padding: 20px 10px 0 10px;
     }
     .title_left {
         margin: 20px auto 0 auto;
@@ -529,7 +537,7 @@
     }
 
     .logo_img {
-        flex: 1;
+        flex: 3;
     }
 
     .wrap-myMenu {
