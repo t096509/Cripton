@@ -421,8 +421,8 @@ figure.fluidratio4 {
 }
 
 .round {
-    border-radius: 100px; /*закругление углов картинок*/
-    border: 3px solid #8bb9ff;
+    border-radius: 10px; /*закругление углов картинок*/
+    border: 2px solid #c8fffc;
 }
 
 .article1_right {
