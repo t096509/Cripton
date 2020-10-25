@@ -38,7 +38,7 @@
     }
 
     .block1 img {
-        width: 300px;
+        width: 280px;
     }
 
     .content img {
@@ -144,9 +144,9 @@
         padding-left: 20px;
     }
 
-    .block1 img {
-        width: 230px;
-    }
+    /*.block1 img {*/
+    /*    width: 230px;*/
+    /*}*/
 
     .hidden {
         float: right;
@@ -251,7 +251,7 @@
         width: 250px;
     }
     .round {
-        border-radius: 60px; /*закругление углов картинок*/
+        border-radius: 10px; /*закругление углов картинок*/
     }
 
 
@@ -295,9 +295,9 @@
         margin: auto;
     }
 
-    .block1 img {
-        width: 190px;
-    }
+    /*.block1 img {*/
+    /*    width: 190px;*/
+    /*}*/
 
     .links_footer a img {
         width: 30%;
@@ -505,7 +505,7 @@
         padding: 10px;
     }
     .round {
-        margin: 10px;
+        margin: 5px;
     }
     .demo {
         padding: 0;
